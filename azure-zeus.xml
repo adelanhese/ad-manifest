@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="https://github.com/nxp-imx"                                     name="CAF"/>
+  <remote fetch="https://github.com/kraj"                                        name="clang"/>
+  <remote fetch="https://github.com/Freescale"                                   name="community"/>
+  <remote fetch="https://source.codeaurora.org/external/imxsupport"              name="imx-support"/>
+  <remote fetch="https://github.com/openembedded"                                name="oe"/>
+  <remote fetch="https://git.openembedded.org"                                   name="python2"/>
+  <remote fetch="https://github.com/meta-rust"                                   name="rust"/>
+  <remote fetch="https://git.yoctoproject.org/git"                               name="yocto"/>
+  <remote fetch="https://bitbucket.org/hwit1"                                    name="hwit"/>
+  <remote fetch="https://github.com/schnitzeltony"                               name="microcontroller"/>
+  <remote fetch="https://github.com/aws"                                         name="aws"/>
+  <remote fetch="https://github.com/sbabic"                                      name="swupdate"/>
+
+  <project name="fsl-community-bsp-base"    path="sources/base"                    remote="community" revision="01488a237cdf45b3087420e169c9f67b84fd7373"/>
+  <project name="meta-clang"                path="sources/meta-clang"              remote="clang"     revision="711e593d5984aad3bf35c51b7ac4482982bc16c7"/>
+  <project name="meta-freescale"            path="sources/meta-freescale"          remote="community" revision="14f1a630a47375432f93c556927b879b51d84c4e"/>
+  <project name="meta-freescale-3rdparty"   path="sources/meta-freescale-3rdparty" remote="community" revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"/>
+  <project name="meta-freescale-distro"     path="sources/meta-freescale-distro"   remote="community" revision="ca27d12e4964d1336e662bcc60184bbff526c857"/>
+  <project name="meta-imx"                  path="sources/meta-imx"                remote="CAF"       revision="zeus-5.4.70-2.3.0"/>
+  <project name="meta-openembedded"         path="sources/meta-openembedded"       remote="oe"        revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"/>
+  <project name="meta-python2"              path="sources/meta-python2"            remote="python2"   revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
+  <project name="meta-rust"                 path="sources/meta-rust"               remote="rust"      revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
+  <project name="meta-microcontroller"      path="sources/meta-microcontroller"    remote="microcontroller"      revision="zeus"/>
+  <project name="meta-aws"                  path="sources/meta-aws"                remote="aws"       revision="dea09667d3979f3ec9746a46b23519a5c8c28857"/>
+  <project name="meta-swupdate"             path="sources/meta-swupdate"           remote="swupdate"  revision="08c05c4e63da3dd71f58d8dc7cd9464790fbceb4"/>
+  <project name="poky"                      path="sources/poky"                    remote="yocto"     revision="daf096e295121ea49ebf21f8070e9a6e28f5d46c"/>
+
+  <project name="meta-hwit"                 path="sources/meta-pitec"               remote="hwit"      revision="zeus">
+    <linkfile src="scripts/setup-environment" dest="setup-environment"/>
+  </project>
+</manifest>
+
+
